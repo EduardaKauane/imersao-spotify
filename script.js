@@ -1,5 +1,5 @@
 const searchInput = document.getElementById('search-input');
-const resultsArtists = document.getElementById('result-artist');
+const resultsArtists = document.getElementById("result-artist");
 const resultPlaylist = document.getElementById('result-playlists');
 
 function requestApi (searchTerm) {
@@ -10,7 +10,7 @@ function requestApi (searchTerm) {
 }
 
 function displayResults(result) {
-    resultPlaylist.classList.add('hidden');
+    resultPlaylist.classList.add("hidden");
     const artistName = document.getElementById('artist-name');
     const artistImage = document.getElementById('artist-img');
 
@@ -31,4 +31,4 @@ document.addEventListener('input', function() {
     }
 
     requestApi(searchTerm);
-});
+})
